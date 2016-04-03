@@ -714,7 +714,7 @@ output.
 When C<merge_record_collisions> is I<false>, the last insert "wins". This
 means that if you insert C<1.2.3.255/32> and then C<1.2.3.0/24>, the data for
 C<1.2.3.255/24> will overwrite the data you previously inserted for
-C<1.2.3.255/232>. On the other hand, if you insert C<1.2.3.255/32> last, then
+C<1.2.3.255/32>. On the other hand, if you insert C<1.2.3.255/32> last, then
 the tree will be split so that the C<1.2.3.0 - 1.2.3.254> range has different
 data than C<1.2.3.255>.
 
